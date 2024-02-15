@@ -1,8 +1,8 @@
 # Initialize repository
 git init
 
-# Create develop branch from master
-git checkout -b develop master
+# Create develop branch from main
+git checkout -b develop main
 
 # Implement feature A
 git checkout -b feature-A develop
@@ -27,7 +27,7 @@ git checkout -b release-2023-10-25 develop
 # Test and fix any issues
 git add .
 git commit -m "Release 2023-10-25"
-git checkout master
+git checkout main
 git merge --no-ff release-2023-10-25
 git tag -a v2023-10-25 -m "Release 2023-10-25"
 git checkout develop
