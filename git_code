@@ -13,15 +13,6 @@ git checkout develop
 git merge --no-ff feature-A
 git branch -d feature-A
 
-# Implement feature B
-git checkout -b feature-B develop
-# Work on feature B
-git add .
-git commit -m "Implement feature B"
-git checkout develop
-git merge --no-ff feature-B
-git branch -d feature-B
-
 # 25th of month
 git checkout -b release-2023-10-25 develop
 # Test and fix any issues
