@@ -1,8 +1,8 @@
 # Initialize repository
 git init
 
-# Create develop branch from master
-git checkout -b develop master
+# Create develop branch from main
+git checkout -b develop main
 
 # Implement feature A
 git checkout -b feature-A develop
@@ -12,15 +12,6 @@ git commit -m "Implement feature A"
 git checkout develop
 git merge --no-ff feature-A
 git branch -d feature-A
-
-# Implement feature B
-git checkout -b feature-B develop
-# Work on feature B
-git add .
-git commit -m "Implement feature B"
-git checkout develop
-git merge --no-ff feature-B
-git branch -d feature-B
 
 # 25th of month
 git checkout -b release-2023-10-25 develop
